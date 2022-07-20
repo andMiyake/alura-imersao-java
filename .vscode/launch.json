@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch StickerCreator",
+            "request": "launch",
+            "mainClass": "StickerCreator",
+            "projectName": "alura-stickers_a12eb993"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -17,7 +24,7 @@
             "mainClass": "App",
             "projectName": "alura-stickers_a12eb993",
             "env": {
-                    "API_KEY": "k_012345678"
+                "API_KEY": "k_012345678"
             }
         }
     ]

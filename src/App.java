@@ -1,4 +1,6 @@
+import java.io.InputStream;
 import java.net.URI;
+import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -14,7 +16,7 @@ public class App {
 
         // fazer uma conexão HTTP e buscar os top 250 filmes
         // make an HTTP conection and search the top 250 movies
-        
+
         // String url = "https://imdb-api.com/en/API/Top250Movies/" + imdbApiKey;
         // String url = "https://imdb-api.com/en/API/MostPopularMovies/" + imdbApiKey;
 
@@ -33,17 +35,31 @@ public class App {
 
         // exibir e manipular os dados
         // show and manipulate the data
+        var creator = new StickerCreator();
         for (Map<String, String> movie : moviesList) {
-            System.out.println("Title: " + "\u001b[1m" + movie.get("title") + "\u001b[0m");
-            System.out.println("Poster: " + "\u001b[1m" + movie.get("image") + "\u001b[0m");
-            System.out.println("\u001b[46m" + "Rating: " + "\u001b[1m" + movie.get("imDbRating") + "\u001b[0m");
 
-            int ratingStars = Integer.parseInt(movie.get("imDbRating").substring(0, 1));
+            String urlImage = movie.get("image");
+            String title = movie.get("title");
 
-            for (int i = 1; i <= ratingStars; i++) {
-                System.out.print("\u2B50");
-            }
-            System.out.println();
+            InputStream inputStream = new URL(urlImage).openStream();
+            String fileName = title + ".png";
+
+            creator.create(inputStream, fileName);
+
+            // System.out.println("Title: " + "\u001b[1m" + movie.get("title") + "\u001b[0m");
+            // System.out.println("Poster: " + "\u001b[1m" + movie.get("image") + "\u001b[0m");
+            // System.out.println("\u001b[46m" + "Rating: " + "\u001b[1m" + movie.get("imDbRating") + "\u001b[0m");
+
+            // int ratingStars = Integer.parseInt(movie.get("imDbRating").substring(0, 1));
+
+            // for (int i = 1; i <= ratingStars; i++) {
+            //     System.out.print("\u2B50");
+            // }
+            // System.out.println();
+            // System.out.println();
+
+
+            System.out.println("Title: " + "\u001b[1m" + title + "\u001b[0m");
             System.out.println();
         }
 
