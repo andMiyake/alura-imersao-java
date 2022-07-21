@@ -2,6 +2,10 @@
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/AndersonMiyake/alura-imersao-java/main/output/The%20Shawshank%20Redemption.png" width="200" height="400" />
+</p>
+
 ## Folder Structure
 
 The workspace contains two folders by default, where:
