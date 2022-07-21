@@ -39,7 +39,7 @@ public class StickerCreator {
         // graphics.setColor(Color.YELLOW);
         // graphics.setFont(font);
 
-        //Colando uma imagem
+        // Colando uma imagem
         BufferedImage joinha = ImageIO.read(new File("input/approves.png"));
         graphics.drawImage(joinha, -80, newHeight - 300, null);
 
@@ -59,13 +59,13 @@ public class StickerCreator {
     }
 
     private void printText(int width, int newHeight, Graphics2D graphics) {
-        
+
         String text = "TOPZERA";
-        var font = new Font("Impact", Font.BOLD, newHeight / 18); //1200px height - 66 px
+        var font = new Font("Impact", Font.BOLD, newHeight / 18); // 1200px height - 66 px
 
         Color outlineColor = Color.black;
         Color fillColor = Color.white;
-        BasicStroke outlineStroke = new BasicStroke(newHeight / 80);    ////1200px height - 15 px
+        BasicStroke outlineStroke = new BasicStroke(newHeight / 80); //// 1200px height - 15 px
 
         Graphics2D g2 = (Graphics2D) graphics;
 
