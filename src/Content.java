@@ -1,4 +1,4 @@
-public record Content(String title, String imageUrl){}
+public record Content(String title, String imageUrl, String rating){}
 
 // public class Content {
 

@@ -9,7 +9,9 @@ public class ClientHttp {
 
     public String searchData(String url) {
         try {
-
+            
+            // fazer uma conexão HTTP
+            // make an HTTP conection
             var client = HttpClient.newHttpClient();
             URI uri = URI.create(url);
             var request = HttpRequest.newBuilder(uri).GET().build();

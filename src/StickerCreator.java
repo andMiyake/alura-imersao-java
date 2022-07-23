@@ -16,7 +16,7 @@ public class StickerCreator {
 
     public void create(InputStream inputStream, String fileName) throws Exception {
 
-        // leitura da imagem
+        // leitura da imagem local
         // InputStream inputStream = new FileInputStream(new File("input/movie.jpg"));
         // InputStream inputStream = new
         // URL("https://imersao-java-apis.s3.amazonaws.com/TopMovies_1.jpg").openStream();

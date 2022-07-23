@@ -16,7 +16,8 @@ public class ImdbContentExtractor implements ContentExtractor {
             String title = attribute.get("title");
             String imageUrl = attribute.get("image");
             // .replaceAll("(@+)(.*).jpg$", "$1.jpg");
-            var content = new Content(title, imageUrl);
+            String rating = attribute.get("imDbRating");
+            var content = new Content(title, imageUrl, rating);
             contents.add(content);
         });
 
