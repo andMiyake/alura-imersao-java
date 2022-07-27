@@ -36,13 +36,23 @@ Sem usar nenhum biblioteca externa.
 
 <br/>
 <h2>Aula 2 - Gerando figurinhas para WhatsApp</h2>
+"Nesta segunda aula vamos criar um gerador de figurinhas explorando outras bibliotecas nativas do Java, para que possamos enviar por Whatsapp os nossos filmes preferidos!"
 
 <h2>Aula 3 - Ligando as pontas, refatoração e orientação a objetos</h2>
+"Chegou o momento de pegarmos os filmes do IMDb e gerar figurinhas com os pôsteres, aproveitando para melhorar nosso código com as refatorações necessárias para torná-lo mais flexível e fácil de entender."
+
 
 <h2>Aula 4 - Criando nossa prórpia API com Spring</h2>
+"Agora vamos construir uma API REST para expor nosso próprio conteúdo, utilizando ferramentas profissionais como o Spring Framework e um banco de dados NoSQL."
 
 <h2>Aula 5 - Publicando nossa API no Cloud</h2>
+"Para fechar com chave de ouro, vamos tornar nossa aplicação acessível por qualquer pessoa, fazendo o deploy na nuvem. Além disso, vamos gerar figurinhas a partir do conteúdo dessa nossa API."
 
+<br/>
+<br/>
+<br/>
+
+---
 
 ✔️ Tecnologias utilizadas
 
